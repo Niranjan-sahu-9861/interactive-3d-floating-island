@@ -1,0 +1,42 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #87CEEB; /* Fallback color */
+}
+
+#three-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+#ui-container {
+    position: absolute;
+    top: 5%;
+    left: 87%;
+    transform: translateX(-50%);
+    z-index: 10;
+    pointer-events: none; /* Let mouse clicks pass through to the 3D scene */
+    width: 90%;
+    max-width: 400px;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.highlight {
+    color: #0070f3;
+}
